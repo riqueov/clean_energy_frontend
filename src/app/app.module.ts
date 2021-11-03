@@ -19,12 +19,12 @@ import { MenuComponent } from './menu/menu.component';
 @NgModule({
   declarations: [
     AppComponent,
-    EntrarComponent
-    RodapeComponent
+    EntrarComponent,
+    RodapeComponent,
 
 
     CadastrarComponent,
-    SobreComponent
+    SobreComponent,
 
     MenuComponent
 
