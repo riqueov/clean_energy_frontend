@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
+import { SobreComponent } from './sobre/sobre.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CadastrarComponent
+    CadastrarComponent,
+    SobreComponent
   ],
   imports: [
     BrowserModule,
