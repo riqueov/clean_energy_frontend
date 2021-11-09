@@ -31,16 +31,17 @@ export class EntrarComponent implements OnInit {
       environment.email = this.credenciais.email
       environment.senha = this.credenciais.senha
       environment.idUsuario = this.credenciais.idUsuario
-      
+
+    
       console.log(environment.token)
       console.log(environment.nome)
       console.log(environment.email)
-      console.log(environment.senha)
+     
       console.log(environment.idUsuario)
 
-      this.router.navigate(['/entrar'])
+      this.router.navigate(['/inicio'])
     }, erro=>{
-      if(erro.status == 500){
+      if(erro.status == 400){
         alert('Usuario ou senha incorretos.')
       }
     })

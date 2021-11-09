@@ -10,6 +10,7 @@ import { RodapeComponent } from './rodape/rodape.component';
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { MenuComponent } from './menu/menu.component';
+import { InicioComponent } from './inicio/inicio.component';
 
 
 
@@ -22,7 +23,8 @@ import { MenuComponent } from './menu/menu.component';
 
     CadastrarComponent,
     SobreComponent,
-    MenuComponent
+    MenuComponent,
+    InicioComponent
 
   ],
   imports: [
