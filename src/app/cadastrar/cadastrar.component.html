@@ -11,29 +11,24 @@
 
                         <div class="form-group">
                             <label for="nome">Nome</label>
-                            <input class="form-control" type="text" name="nome" id="nome" placeholder="Seu nome">
+                            <input [(ngModel)]='usuario.nomeCompleto'  class="form-control" type="text" name="nome" id="nome" placeholder="Seu nome">
                         </div>
 
                         <div class="form-group">
                             <label for="email">E-mail</label>
-                            <input class="form-control" type="email" name="email" id="email"
+                            <input [(ngModel)]='usuario.email' class="form-control" type="email" name="email" id="email"
                                 placeholder="Seu e-mail">
                         </div>
 
-                        <div class="form-group">
-                            <label for="foto">Link da foto</label>
-                            <input class="form-control" type="text" name="foto" id="foto"
-                                placeholder="O link da sua foto">
-                        </div>
-
+                        
                         <div class="form-group">
                             <label for="senha">Senha</label>
-                            <input class="form-control" type="password" name="senha" id="senha" placeholder="Sua senha">
+                            <input (input)='confirmSenha($event)' class="form-control" type="password" name="senha" id="senha" placeholder="Sua senha">
                         </div>
 
                         <div class="form-group">
                             <label for="confirmSenha">Confirmar Senha</label>
-                            <input class="form-control" type="password" name="confirmSenha" id="confirmSenha"
+                            <input [(ngModel)]='usuario.senha' class="form-control" type="password" name="confirmSenha" id="confirmSenha"
                                 placeholder="Confirme sua senha">
                         </div>
 
@@ -47,13 +42,15 @@
 
                             <a class="m-3" id="trash"><i class="fa fa-trash-can"></i></a> -->
 
+                            <button type="submit" class="btn btn-success mr-4" (click)='cadastrar()'>Cadastrar</button>
+                            
                             <button type="submit" class="btn btn-danger mr-4" routerLink='/entrar'>Cancelar</button>
 
-                            <button type="submit" class="btn btn-success mr-4">Cadastrar</button>
+                            
 
-                            <button type="submit" class="btn btn-warning mr-4">Editar</button>
+                            <!-- <button type="submit" class="btn btn-warning mr-4">Editar</button>
 
-                            <button type="submit" class="btn btn-danger">Deletar</button>
+                            <button type="submit" class="btn btn-danger">Deletar</button> -->
 
                         
                         </div>
