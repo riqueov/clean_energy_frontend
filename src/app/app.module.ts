@@ -11,6 +11,8 @@ import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { MenuComponent } from './menu/menu.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { CategoriaComponent } from './categoria/categoria.component';
+import { ProdutoComponent } from './produto/produto.component';
 
 
 
@@ -24,7 +26,9 @@ import { InicioComponent } from './inicio/inicio.component';
     CadastrarComponent,
     SobreComponent,
     MenuComponent,
-    InicioComponent
+    InicioComponent,
+    CategoriaComponent,
+    ProdutoComponent
 
   ],
   imports: [
