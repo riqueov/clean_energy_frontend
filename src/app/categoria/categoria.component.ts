@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment.prod';
 import { CategoriaModel } from '../model/CategoriaModel';
 import { CategoriaService } from '../service/categoria.service';
@@ -22,8 +23,12 @@ export class CategoriaComponent implements OnInit {
   ngOnInit() {
     window.scroll(0,0)
 
+    this.categoriaService.refreshToken()
     this.findAllCategorias()
+  
+   
   }
+
 
 
   findAllCategorias(){
@@ -32,11 +37,19 @@ export class CategoriaComponent implements OnInit {
     })
   }
 
-  cadastrar() {
-    this.categoriaService.postCategoria(this.categoria).subscribe((resp: CategoriaModel)=>{
+  cadastrarCategoria(){
+    this.categoriaService.postCategoria(this.categoria).subscribe((resp: CategoriaModel) => {
       this.categoria = resp
-      alert('Categoria cadastrada com sucesso!')
+      alert('Categoria cadastrado, meu bom... ♥')
       this.categoria = new CategoriaModel()
+      this.findAllCategorias()
     })
   }
+
+  
+
+
+
+
+
 }
