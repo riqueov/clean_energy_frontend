@@ -17,6 +17,7 @@ import { ProdutoComponent } from './produto/produto.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +29,8 @@ import { ProdutoComponent } from './produto/produto.component';
     MenuComponent,
     InicioComponent,
     CategoriaComponent,
-    ProdutoComponent
+    ProdutoComponent,
+  
 
   ],
   imports: [
