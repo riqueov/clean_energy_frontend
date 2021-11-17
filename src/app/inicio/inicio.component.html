@@ -1,1 +1,55 @@
-<h1>Pagina Inicial!!</h1>
+<div class="col-md-6">
+    <button class="btn btn-dark mr-2" data-toggle="modal" data-target="#novoProduto">Novo produto</button>
+    <a class="btn btn-dark" href="#produtos">Ver produtos</a>
+</div>
+
+<div class="container mb-5 mt-5" id='produtos'>
+
+<nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+      <a class="nav-item nav-link active" id="nav-produtos-tab" data-toggle="tab" href="#produtos" role="tab" aria-controls="nav-produtos" aria-selected="true">Produtos</a>
+      <a class="nav-item nav-link" id="nav-produtoCategoria-tab" data-toggle="tab" href="#produtoCategoria" role="tab" aria-controls="nav-produtoCategoria" aria-selected="false">Produtos por categoria</a>
+    </div>
+  </nav>
+  <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="produtos" role="tabpanel" aria-labelledby="nav-produtos-tab">Produtos</div>
+    <div class="tab-pane fade" id="produtoCategoria" role="tabpanel" aria-labelledby="nav-produtoCategoria-tab">Produtos por categoria</div>
+  </div>
+
+</div>
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="novoProduto" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="novoProduto">Novo Produto</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+              <label for="produto">Produto</label>
+              <input type="text" class="form-control" id="produto">
+          </div>
+
+          <div class="form-group">
+            <label for="descricao">Descrição do produto</label>
+            <textarea name="descricao" id="descricao" class="form-control" cols="3"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="categoria">Selecione uma categoria ou <a href="">cadastre uma nova</a>:</label>
+            <select name="categria" id="categoria" class="form-control"></select>
+        </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-success">Cadastrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
