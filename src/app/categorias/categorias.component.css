@@ -1,0 +1,16 @@
+.categorias {
+    left: 150px; 
+    position: relative; 
+}
+
+.editarIcone{
+    color: green;
+}
+
+.deletarIcone {
+    color: red;
+}
+.novaCategoria th{
+    width:10px;
+}
+  

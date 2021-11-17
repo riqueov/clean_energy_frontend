@@ -1,0 +1,17 @@
+#sidebarMenu {
+    border-right: 50px;
+    background-color: #E4EEF2;
+    position: fixed;
+    z-index: 100;
+    padding: 10px 0 0;
+    color: #023047;
+  height: 100vh;
+}
+
+.nav a {
+  color: #023047;
+}
+
+.home a{
+  color: #BB3E03;
+}
