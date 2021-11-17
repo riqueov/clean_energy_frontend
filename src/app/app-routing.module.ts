@@ -7,6 +7,7 @@ import { CategoriaComponent } from './categoria/categoria.component';
 
 import { EntrarComponent } from './entrar/entrar.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { ProdutoComponent } from './produto/produto.component';
 import { SobreComponent } from './sobre/sobre.component';
 
 const routes: Routes = [
@@ -16,6 +17,7 @@ const routes: Routes = [
 {path: 'sobre', component: SobreComponent },
 {path: 'cadastrar', component: CadastrarComponent },
 {path: 'categoria', component: CategoriaComponent},
+{path: 'produto', component: ProdutoComponent},
 
 
 
