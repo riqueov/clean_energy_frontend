@@ -11,11 +11,13 @@ import { RodapeComponent } from './rodape/rodape.component';
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { MenuComponent } from './menu/menu.component';
-import { InicioComponent } from './inicio/inicio.component';
-import { CategoriaComponent } from './categoria/categoria.component';
-import { ProdutoComponent } from './produto/produto.component';
-
-
+import { MenuAdminComponent } from './menu-admin/menu-admin.component';
+import { MenuAdminLateralComponent } from './menu-admin-lateral/menu-admin-lateral.component';
+import { PerfilComponent } from './perfil/perfil.component';
+import { CategoriasComponent } from './categorias/categorias.component';
+import { ProdutosComponent } from './produtos/produtos.component';
+import { NovaCategoriaComponent } from './nova-categoria/nova-categoria.component';
+import { NovoProdutoComponent } from './novo-produto/novo-produto.component';
 
 
 
@@ -28,10 +30,15 @@ import { ProdutoComponent } from './produto/produto.component';
     CadastrarComponent,
     SobreComponent,
     MenuComponent,
-    InicioComponent,
-    CategoriaComponent,
-    ProdutoComponent,
-  
+    MenuAdminComponent,
+    MenuAdminLateralComponent,
+    PerfilComponent,
+    CategoriasComponent,
+    ProdutosComponent,
+    NovaCategoriaComponent,
+    NovoProdutoComponent,
+    
+
 
   ],
   imports: [
