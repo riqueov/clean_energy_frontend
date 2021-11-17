@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { AppComponent } from './app.component';
-
+import { EntrarComponent } from './entrar/entrar.component';
+import { RodapeComponent } from './rodape/rodape.component';
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { SobreComponent } from './sobre/sobre.component';
-
 import { MenuComponent } from './menu/menu.component';
 import { MenuAdminComponent } from './menu-admin/menu-admin.component';
 import { MenuAdminLateralComponent } from './menu-admin-lateral/menu-admin-lateral.component';
@@ -18,9 +20,12 @@ import { NovaCategoriaComponent } from './nova-categoria/nova-categoria.componen
 import { NovoProdutoComponent } from './novo-produto/novo-produto.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
+    EntrarComponent,
+    RodapeComponent,
 
     CadastrarComponent,
     SobreComponent,
@@ -33,14 +38,19 @@ import { NovoProdutoComponent } from './novo-produto/novo-produto.component';
     NovaCategoriaComponent,
     NovoProdutoComponent,
     
-    
+
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [{
+    provide: LocationStrategy,
+    useClass: HashLocationStrategy
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
