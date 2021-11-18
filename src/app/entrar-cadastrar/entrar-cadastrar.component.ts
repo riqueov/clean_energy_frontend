@@ -57,6 +57,7 @@ entrar(){
     environment.email = this.credenciais.email
     environment.senha = this.credenciais.senha
     environment.idUsuario = this.credenciais.idUsuario
+    environment.tipo = this.credenciais.tipo
 
   
     console.log(environment.token)
