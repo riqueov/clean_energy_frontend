@@ -1,26 +1,26 @@
+
+
 <div class="container categorias mt-4">
     <h1 class="h2 text-secondary"> Categorias Cadastradas </h1>
     <table class="table table-hover ">
         <thead>
             <tr>
-                <th>#</th>
-                <th>Nome</th>
-                <th>Material</th>
-                <th>Potência</th>
-                <th>Atualizar</th>
-                <th>Deletar</th>
+              <th scope="col">Categoria</th>
+              <th scope="col"></th>
+              <th scope="col"></th>
+             
             </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th>1</th>
-                <td>Painel Solar</td>
-                <td>Alumínio</td>
-                <td>620W</td>
-                <td><a href="#" type="submit" class="btn editarIcone"><i class=" fa fa-pencil"></i></a></td>
-                <td><a href="" type="submit" class="btn deletarIcone"><i class=" fa fa-trash"></i></a></td>
+          </thead>
+          <tbody>
+            <tr *ngFor='let categoria of listaCategorias'>
+              
+              <th scope="row">{{categoria.nome}}</th>
+              <td><button class=" btn editarIcone" [routerLink]= "['/categoria-edit', categoria.idCategoria ]" ><i class=" fa fa-pencil"></i></button></td>
+              <td><button class="btn deletarIcone" [routerLink]= "['/categoria-delet', categoria.idCategoria]"><i class=" fa fa-trash"></i></button></td> 
+              
             </tr>
-        </tbody>
+           
+          </tbody>
     </table>
 </div>
 

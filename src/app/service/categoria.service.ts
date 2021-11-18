@@ -23,6 +23,10 @@ export class CategoriaService {
   getAllCategoria(): Observable<CategoriaModel[]>{
   return this.http.get<CategoriaModel[]>('https://projetocleanenergy.herokuapp.com/categorias', this.token)
   }
+  
+  getByIdCategoria(id: number): Observable <CategoriaModel>{
+    return this.http.get<CategoriaModel>(`https://projetocleanenergy.herokuapp.com/categorias/id/${id}`, this.token)
+      }
 
   postCategoria(categoria: CategoriaModel): Observable<CategoriaModel> {
     return this.http.post<CategoriaModel>('https://projetocleanenergy.herokuapp.com/categorias', categoria, this.token)
