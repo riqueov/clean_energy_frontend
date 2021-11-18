@@ -36,10 +36,11 @@ export class NovoProdutoComponent implements OnInit {
   ngOnInit() {
 
     this.categoriaService.refreshToken()
+    this.produtoService.refreshToken()
 
     this.getAllCategoria()
   }
-
+  
   getAllCategoria() {
     this.categoriaService.getAllCategoria().subscribe((resp: CategoriaModel[]) => {
       this.listaCategoria = resp
@@ -49,6 +50,7 @@ export class NovoProdutoComponent implements OnInit {
   finByIdCategoria() {
     this.categoriaService.getByIdCategoria(this.idCat).subscribe((resp: CategoriaModel) => {
       this.categoria = resp
+      console.log(this.idCat)
     })
   }
 
@@ -58,6 +60,8 @@ export class NovoProdutoComponent implements OnInit {
 
     this.usuario.idUsuario = this.idUser
     this.produto.usuario = this.usuario
+
+    console.log(environment)
 
     this.produtoService.postProduto(this.produto).subscribe((resp: ProdutoModel) => {
       this.produto = resp

@@ -5,11 +5,11 @@
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="nome">Nome do Produto</label>
-                    <input [(ngModel)]='produto.nome' type="text" class="form-control" id="nome" placeholder="Digite o nome do produto">
+                    <input [(ngModel)]='produto.nome' type="text" class="form-control" id="nome" placeholder="Digite o nome do produto" name='produto'>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="nome">Categoria</label>
-                    <select id="categoria" class="form-control" [(ngModel)]='idCat' (change)='finByIdCategoria()'>
+                    <select name='categoria' id="categoria" class="form-control" [(ngModel)]='idCat' (change)='finByIdCategoria()'>
                         <option value="">Selecione...</option>
                         <option *ngFor='let categoria of listaCategoria' value="{{categoria.idCategoria}}">{{categoria.nome}}</option>
                     </select>
@@ -24,13 +24,13 @@
                         <div class="input-group-prepend">
                             <div class="input-group-text">R$</div>
                         </div>
-                    <input [(ngModel)]='produto.preco' type="text" class="form-control" id="preco" placeholder="Digite o valor">
+                    <input [(ngModel)]='produto.preco' name='preco' type="text" class="form-control" id="preco" placeholder="Digite o valor">
                     </div>
                 </div>
 
                 <div class="form-group col-md-4">
                     <label for="imagem">Imagem</label>
-                    <input [(ngModel)]='produto.imagem' type="text" class="form-control" id="imagem" placeholder="Digite o link da imagem">
+                    <input [(ngModel)]='produto.imagem' name='imagem' type="text" class="form-control" id="imagem" placeholder="Digite o link da imagem">
                 </div>
 
                 <div class="form-group col-md-4">
