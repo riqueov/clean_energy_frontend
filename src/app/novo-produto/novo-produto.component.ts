@@ -24,7 +24,6 @@ export class NovoProdutoComponent implements OnInit {
   categoria: CategoriaModel = new CategoriaModel()
 
   usuario: UsuarioModel = new UsuarioModel
-  credenciais: CredenciaisDTO = new CredenciaisDTO
   idUser = environment.idUsuario
 
   constructor(
@@ -36,6 +35,7 @@ export class NovoProdutoComponent implements OnInit {
   ngOnInit() {
 
     this.categoriaService.refreshToken()
+    this.produtoService.refreshToken()
 
     this.getAllCategoria()
   }
@@ -63,7 +63,7 @@ export class NovoProdutoComponent implements OnInit {
       this.produto = resp
       alert('Produto cadastrado com sucesso!')
       // Limpa os campos
-      this.produto = new ProdutoModel
+      this.produto = new ProdutoModel()
     })
   }
 
