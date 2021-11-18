@@ -6,6 +6,12 @@ import { NovaCategoriaComponent } from './nova-categoria/nova-categoria.componen
 import { NovoProdutoComponent } from './novo-produto/novo-produto.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { ProdutosComponent } from './produtos/produtos.component';
+import { EntrarComponent } from './entrar/entrar.component';
+import { InicioComponent } from './inicio/inicio.component';
+import { ProdutoComponent } from './produto/produto.component';
+import { SobreComponent } from './sobre/sobre.component';
+import { CadastrarComponent } from './cadastrar/cadastrar.component';
+import { CategoriaComponent } from './categoria/categoria.component';
 
 import { InicioComponent } from './inicio/inicio.component';
 import { ProdutoComponent } from './produto/produto.component';
@@ -29,8 +35,8 @@ const routes: Routes = [
     {path: 'categoria', component: CategoriaComponent},
     {path: 'produto', component: ProdutoComponent},
 
-
-
+  
+  
 ];
 @NgModule({
  imports: [RouterModule.forRoot(routes)],

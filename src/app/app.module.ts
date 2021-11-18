@@ -13,6 +13,7 @@ import { SobreComponent } from './sobre/sobre.component';
 import { MenuComponent } from './menu/menu.component';
 import { MenuAdminLateralComponent } from './menu-admin-lateral/menu-admin-lateral.component';
 import { PerfilComponent } from './perfil/perfil.component';
+import { CategoriaComponent } from './categoria/categoria.component';
 import { CategoriasComponent } from './categorias/categorias.component';
 import { CategoriaComponent } from './categoria/categoria.component';
 import { ProdutosComponent } from './produtos/produtos.component';
@@ -27,7 +28,6 @@ import { EntrarCadastrarComponent } from './entrar-cadastrar/entrar-cadastrar.co
     AppComponent,
     EntrarComponent,
     RodapeComponent,
-
     CadastrarComponent,
     SobreComponent,
     MenuComponent,
@@ -40,7 +40,6 @@ import { EntrarCadastrarComponent } from './entrar-cadastrar/entrar-cadastrar.co
     NovoProdutoComponent,
     EntrarCadastrarComponent,
     
-
 
   ],
   imports: [

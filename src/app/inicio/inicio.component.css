@@ -1,3 +1,128 @@
-.tamanhoCarrossel{
-    right: 50px;
+.videoSol{
+    width: 100vh;
+    z-index: -1;
 }
+
+.texto-video {
+    width: 100%;
+    text-align: center;
+    top: 250px;
+    display:block;
+    margin-left: -10px;
+    font-family: "Raleway",sans-serif;
+    font-size: 50px;
+    letter-spacing: .2rem;
+    z-index: 100;
+}
+
+.carousel-indicators li {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+}
+
+#bannerCarousel {
+    height: 300px;
+}
+
+.card {
+   width: 12rem;
+   border: none;
+}
+
+.card:hover {
+   box-shadow: 0 0 15px #adb5bd;
+   cursor: pointer;
+}
+
+.descricaoProduto {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#valorAntigo {
+    text-decoration:line-through;
+    font-size: 12px;
+}
+
+#valorAtual {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.btnComprar {
+    /* width: 100%;
+    font-weight: bold;
+    border: 2px solid transparent;
+    border-image: linear-gradient(45deg, #BB3E03, #FB8500);
+    border-image-slice: 1;
+    border-radius: 5px;
+    border: double 1px transparent;
+    background-image: linear-gradient(white, white),
+    linear-gradient(95deg, #BB3E03, #FB8500);
+    background-origin: border-box;
+    background-clip: content-box, border-box; */
+    width: 100%;
+    font-weight: bold;
+    border: 2px solid #BB3E03;
+    border-radius: 5px;
+    color: #BB3E03;
+    cursor: pointer;
+}
+
+.btnComprar:hover{
+    /* padding-left: 20px;
+    padding-right: 20px; */
+    color: #FFF;
+    /* background-color: #BB3E03; */
+    background: linear-gradient(45deg, #BB3E03, #FB8500);
+    box-shadow: 0 0 15px #adb5bd;
+    border: none;
+}
+     
+.maisProdutos a {
+    text-decoration: none;
+    color: #023047;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    align-content: center;
+    justify-content: center;
+}
+
+.iconesEnergia {
+    margin-top: 52px;
+    background-color: #219EBC;
+    width: 100%;
+}
+
+.iconesEnergia h3 {
+    color: #FFF;
+    font-size: 18px;
+}
+
+#iconeEnergia{
+    font-size: 52px;
+    color: #FFB703;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.energiaLimpa {
+    width: 110px;
+}
+.energiaRenovavel {
+    width: 100px;
+}
+.menorCusto {
+    width: 95px;
+}
+.boxIcone {
+    text-align: center;
+    padding: 20px;
+}
+
+.modal-title {
+    color:#023047;
+    font-weight: bold;
+}
+
