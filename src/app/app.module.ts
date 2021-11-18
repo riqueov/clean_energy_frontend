@@ -13,13 +13,13 @@ import { SobreComponent } from './sobre/sobre.component';
 import { MenuComponent } from './menu/menu.component';
 import { MenuAdminLateralComponent } from './menu-admin-lateral/menu-admin-lateral.component';
 import { PerfilComponent } from './perfil/perfil.component';
-import { CategoriaComponent } from './categoria/categoria.component';
 import { CategoriasComponent } from './categorias/categorias.component';
-import { CategoriaComponent } from './categoria/categoria.component';
 import { ProdutosComponent } from './produtos/produtos.component';
 import { NovaCategoriaComponent } from './nova-categoria/nova-categoria.component';
 import { NovoProdutoComponent } from './novo-produto/novo-produto.component';
 import { EntrarCadastrarComponent } from './entrar-cadastrar/entrar-cadastrar.component';
+import { CategoriaDeletComponent } from './delet/categoria-delet/categoria-delet.component';
+import { CategoriaEditComponent } from './edit/categoria-edit/categoria-edit.component';
 
 
 
@@ -34,11 +34,12 @@ import { EntrarCadastrarComponent } from './entrar-cadastrar/entrar-cadastrar.co
     MenuAdminLateralComponent,
     PerfilComponent,
     CategoriasComponent,
-    CategoriaComponent,
     ProdutosComponent,
     NovaCategoriaComponent,
     NovoProdutoComponent,
     EntrarCadastrarComponent,
+    CategoriaDeletComponent,
+    CategoriaEditComponent,
     
 
   ],

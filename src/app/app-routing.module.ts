@@ -11,14 +11,11 @@ import { InicioComponent } from './inicio/inicio.component';
 import { ProdutoComponent } from './produto/produto.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
-import { CategoriaComponent } from './categoria/categoria.component';
 
-import { InicioComponent } from './inicio/inicio.component';
-import { ProdutoComponent } from './produto/produto.component';
-import { SobreComponent } from './sobre/sobre.component';
-import { CadastrarComponent } from './cadastrar/cadastrar.component';
-import { CategoriaComponent } from './categoria/categoria.component';
 import { EntrarCadastrarComponent } from './entrar-cadastrar/entrar-cadastrar.component';
+import { CategoriaEditComponent } from './edit/categoria-edit/categoria-edit.component';
+
+import { CategoriaDeletComponent } from './delet/categoria-delet/categoria-delet.component';
 
 
 const routes: Routes = [
@@ -32,8 +29,11 @@ const routes: Routes = [
     {path: 'entrar-cadastrar', component: EntrarCadastrarComponent },
     {path: 'sobre', component: SobreComponent },
     {path: 'cadastrar', component: CadastrarComponent },
-    {path: 'categoria', component: CategoriaComponent},
+    
     {path: 'produto', component: ProdutoComponent},
+    {path: 'categoria-edit/:id', component: CategoriaEditComponent},
+    {path: 'categoria-delet/:id', component: CategoriaDeletComponent},
+    
 
   
   
