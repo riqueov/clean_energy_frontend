@@ -1,12 +1,55 @@
-.produtos {
-    left: 150px; 
-    position: relative; 
-}
 
-.editarIcone {
-    color: green;
-}
-
-.deletarIcone {
-    color: red;
-}
+.card {
+    width: 12rem;
+    border: none;
+ }
+ 
+ .card:hover {
+    box-shadow: 0 0 15px #adb5bd;
+    cursor: pointer;
+ 
+ }
+ 
+ .descricaoProduto {
+     font-size: 14px;
+     font-weight: bold;
+ }
+ 
+ #valorAntigo {
+     text-decoration:line-through;
+     font-size: 12px;
+ }
+ 
+ #valorAtual {
+     font-weight: bold;
+     font-size: 18px;
+ }
+ 
+ .height-card{
+     height: 540px;
+ }
+ 
+ .btnComprar {
+     width: 100%;
+     margin-top: 10px;
+     font-weight: bold;
+     border-style: none;
+     border-radius: 7px;
+     cursor: pointer;
+     color: #FFF;
+     background-color: #189948;
+     height: 15%;
+ }
+ 
+ .btnComprar:hover{
+     color: #FFF;
+     transition: 1s; 
+     background: linear-gradient(45deg, #25d366, #1ab452);
+     box-shadow: 0 0 15px #adb5bd;
+ }
+      
+ .imagem{
+     height: 50%;
+     width: 100%;
+     object-fit: contain;
+ }
