@@ -1,9 +1,29 @@
-#img-bg{
-    background-image: url(../../assets/cinza.jpg);
+.bg-azul1{
+    background: #023047;
+}
 
-    min-height: 100vh;
+.bg-cinza1{
+    background: #E4EEF2;
+}
 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.bg-cinza2{
+    background: #c4cdd1;
+}
+
+::-webkit-scrollbar {
+    background-color: #023047;    
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #023047;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #023047;
+}
+
+.pneg{
+    padding-bottom: -10px;
 }

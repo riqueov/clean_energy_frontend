@@ -1,30 +1,64 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Clean Energy</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+<nav class="navbar navbar-expand-lg navbar-light bg-light pb-0">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
+  
 
-  <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Ínicio <span class="sr-only">(página atual)</span></a>
+  <div class="collapse navbar-collapse pneg" id="navbarTogglerDemo03">
+
+    <div class="pl-4"><a class="navbar-brand" href="#"><img class="img-top" src="CleanEnergy 15x15.png" alt="" width="70px" height="70px"></a></div>
+
+    <form class="navbar-nav w-100 pr-5 mr-2 justify-content-end">
+      
+      <a class="nav-link pt-0 pb-0 border-right text-dark" href="#">Home</a>
+      <a class="nav-link pt-0 pb-0 border-right text-dark" routerLink='/sobre' href="#">Sobre</a>
+      <a class="nav-link pt-0 pb-0 border-right text-dark" href="#">Produtos</a>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle pt-0 pb-0 text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+          Adm
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="nav-link text-dark" routerLink="/perfil">
+            <span data-feather="bar-chart-2">
+                <i class="fa fa-user mr-2" aria-hidden="true"></i>
+            </span>
+            Meu Perfil
+          </a>
+          <div class="dropdown-divider"></div>
+          <a class="nav-link text-dark" routerLink="/categorias">
+            <span data-feather="bar-chart-2">
+                <i class="fa fa-bookmark mr-2" aria-hidden="true"></i>
+            </span>
+            Categorias Cadastradas
+          </a>
+          <div class="dropdown-divider"></div>
+          <a class="nav-link text-dark" routerLink="/produtos">
+            <span data-feather="bar-chart-2">
+                <i class="fa fa-list-alt mr-2" aria-hidden="true"></i>
+            </span>
+            Produtos Cadastrados
+          </a>
+          <div class="dropdown-divider"></div>
+          <a class="nav-link text-dark" routerLink="/nova-categoria">
+            <span data-feather="bar-chart-2">
+                <i class="fa fa-plus mr-2" aria-hidden="true"></i>
+            </span>
+            Adicionar Categoria
+          </a>
+          <div class="dropdown-divider"></div>
+          <a class="nav-link text-dark" routerLink="/produtos">
+            <span data-feather="bar-chart-2">
+                <i class="fa fa-list-alt mr-2" aria-hidden="true"></i>
+            </span>
+            Produtos Cadastrados
+          </a>
+          </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink='/sobre'>Sobre Nós</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink='/cadastrar'>Cadastrar-se</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink='/entrar'>Logar</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink='/categoria'>Categoria</a>
-      </li>
-     
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+
     </form>
+    <a class="navbar-brand" href="#"><i class="fa fa-user-circle fa-lg" aria-hidden="true"></i></a>
+    <a class="nav-link text-dark" routerLink='/entrar-cadastrar' href="#">Faça o login ou Cadastre-se</a>
+    
   </div>
+</nav>
