@@ -4,14 +4,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
-
 import { AppComponent } from './app.component';
-import { EntrarComponent } from './entrar/entrar.component';
 import { RodapeComponent } from './rodape/rodape.component';
-import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { MenuComponent } from './menu/menu.component';
-import { MenuAdminLateralComponent } from './menu-admin-lateral/menu-admin-lateral.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { CategoriasComponent } from './categorias/categorias.component';
 import { ProdutosComponent } from './produtos/produtos.component';
@@ -26,12 +22,9 @@ import { CategoriaEditComponent } from './edit/categoria-edit/categoria-edit.com
 @NgModule({
   declarations: [
     AppComponent,
-    EntrarComponent,
     RodapeComponent,
-    CadastrarComponent,
     SobreComponent,
     MenuComponent,
-    MenuAdminLateralComponent,
     PerfilComponent,
     CategoriasComponent,
     ProdutosComponent,
