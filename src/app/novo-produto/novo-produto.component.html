@@ -1,42 +1,46 @@
-<div class="container novoProduto mt-4">
+<div class="container mt-4">
     <h1 class="h2 text-secondary"> Adicionar Produto </h1>
     <div class="mt-4">
         <form>
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="nome">Nome do Produto</label>
-                    <input type="text" class="form-control" id="nome" placeholder="Digite o nome da categoria">
+                    <input [(ngModel)]='produto.nome' type="text" class="form-control" id="nome" placeholder="Digite o nome do produto">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="nome">Categoria</label>
-                    <select id="categoria" class="form-control">
-                        <option selected>Escolher...</option>
-                        <option>...</option>
+                    <select id="categoria" class="form-control" [(ngModel)]='idCat' (change)='finByIdCategoria()'>
+                        <option value="">Selecione...</option>
+                        <option *ngFor='let categoria of listaCategoria' value="{{categoria.idCategoria}}">{{categoria.nome}}</option>
                     </select>
                 </div>
             </div>
 
             <div class="form-row ">
+
                 <div class="form-group col-md-4">
-                    <label for="valor">Valor</label>
+                    <label for="preco">Valor</label>
                     <div class="input-group mb-2">
                         <div class="input-group-prepend">
                             <div class="input-group-text">R$</div>
                         </div>
-                    <input type="text" class="form-control" id="valor" placeholder="Digite o valor">
+                    <input [(ngModel)]='produto.preco' type="text" class="form-control" id="preco" placeholder="Digite o valor">
                     </div>
                 </div>
+
                 <div class="form-group col-md-4">
-                    <label for="potencia">Quantidade</label>
-                    <input type="text" class="form-control" id="potencia" placeholder="Digite a potência">
+                    <label for="imagem">Imagem</label>
+                    <input [(ngModel)]='produto.imagem' type="text" class="form-control" id="imagem" placeholder="Digite o link da imagem">
                 </div>
+
                 <div class="form-group col-md-4">
-                    <label for="potencia">Imagem</label>
-                    <input type="text" class="form-control" id="potencia" placeholder="Digite o link da imagem">
+                    <label for="descricao">Descrição do produto</label>
+                    <textarea [(ngModel)]='produto.descricao' name="descricao" id="descricao" cols="50" rows="5" placeholder="Descreva o produto"></textarea>
                 </div>
+
             </div>
             <div class="botoes">
-                <button type="submit" class="btn btn-success mr-4">Cadastrar</button>
+                <button type="submit" class="btn btn-success mr-4" (click)='cadastrarProduto()'>Cadastrar</button>
                 <button type="submit" class="btn btn-danger">Cancelar</button>
             </div>
 
