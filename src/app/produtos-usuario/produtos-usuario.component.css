@@ -2,6 +2,10 @@
     width: 12rem;
     border: none;
  }
+ .card {
+    width: 12rem;
+    border: none;
+ }
  
  .card:hover {
     box-shadow: 0 0 15px #adb5bd;

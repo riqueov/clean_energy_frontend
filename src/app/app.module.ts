@@ -4,6 +4,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { ModalModule } from 'ngx-bootstrap/modal';
+
 import { AppComponent } from './app.component';
 import { RodapeComponent } from './rodape/rodape.component';
 import { SobreComponent } from './sobre/sobre.component';
@@ -17,8 +19,12 @@ import { EntrarCadastrarComponent } from './entrar-cadastrar/entrar-cadastrar.co
 import { CategoriaDeletComponent } from './delet/categoria-delet/categoria-delet.component';
 import { CategoriaEditComponent } from './edit/categoria-edit/categoria-edit.component';
 import { ProdutosUsuarioComponent } from './produtos-usuario/produtos-usuario.component';
+
 import { ProdutoEditComponent } from './edit/produto-edit/produto-edit.component';
 import { ProdutoDeletComponent } from './delet/produto-delet/produto-delet.component';
+
+import { AlertComponent } from './alert/alert.component';
+
 
 
 
@@ -37,8 +43,12 @@ import { ProdutoDeletComponent } from './delet/produto-delet/produto-delet.compo
     CategoriaDeletComponent,
     CategoriaEditComponent,
     ProdutosUsuarioComponent,
+
     ProdutoEditComponent,
     ProdutoDeletComponent,
+
+    AlertComponent,
+
     
 
   ],
@@ -46,7 +56,8 @@ import { ProdutoDeletComponent } from './delet/produto-delet/produto-delet.compo
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ModalModule.forRoot()
   ],
   providers: [{
     provide: LocationStrategy,

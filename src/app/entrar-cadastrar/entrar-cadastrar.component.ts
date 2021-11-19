@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
 import { CredenciaisDTO } from '../model/CredenciaisDTO';
 import { UsuarioModel } from '../model/UsuarioModel';
+import { AlertService } from '../service/alert.service';
 import { AuthService } from '../service/auth.service';
 
 
@@ -20,7 +21,8 @@ export class EntrarCadastrarComponent implements OnInit {
   constructor(
 
     private authService: AuthService,
-    private router : Router
+    private router : Router,
+    private alert: AlertService
   ) { }
 
 
@@ -37,12 +39,12 @@ cadastrar(){
 
 
 if(this.usuario.senha != this.confirmarSenha){
-alert('As senhas são diferentes!!')
+this.alert.showAlertDanger('Senhas não coincidem!')
 }else{
 this.authService.cadastrar(this.usuario).subscribe((resp: UsuarioModel)=> {
   this.usuario = resp
   this.router.navigate(['/entrar'])
-  alert('Usuário cadastrado com sucesso!')
+  this.alert.showAlertSuccess('Usuário cadastrado com sucesso!')
 })
 }
 
@@ -69,7 +71,7 @@ entrar(){
     this.router.navigate(['/inicio'])
   }, erro=>{
     if(erro.status == 400){
-      alert('Usuario ou senha incorretos.')
+      this.alert.showAlertDanger('Usuario e/ou senha incorretos!')
     }
   })
 }
