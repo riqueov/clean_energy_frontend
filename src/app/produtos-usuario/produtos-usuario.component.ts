@@ -49,13 +49,4 @@ export class ProdutosUsuarioComponent implements OnInit {
     })
   }
 
-
-
-
-
-
-
-
-
-
 }

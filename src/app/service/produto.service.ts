@@ -41,8 +41,4 @@ export class ProdutoService {
     return this.http.post<ProdutoModel>('https://projetocleanenergy.herokuapp.com/produtos',produto, this.token)
   }
 
-  getAllProduto(): Observable<ProdutoModel[]> {
-    return this.http.get<ProdutoModel[]> ('https://projetocleanenergy.herokuapp.com/produtos', this.token)
-  }
-
 }
