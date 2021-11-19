@@ -27,3 +27,8 @@
 .pneg{
     padding-bottom: -10px;
 }
+
+.imgh:hover{
+    border-radius: 50%;
+    box-shadow: 0 0 20px #adb5bd;
+}
