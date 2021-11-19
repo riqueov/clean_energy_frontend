@@ -41,7 +41,7 @@ export class ProdutoService {
   }
 
   deleteProduto(id:number){
-    return this.http.delete(`https://projetocleanenergy.herokuapp.com/produtos/id/${id}`, this.token)
+    return this.http.delete(`https://projetocleanenergy.herokuapp.com/produtos/${id}`, this.token)
   }
 
 }
