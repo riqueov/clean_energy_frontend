@@ -47,11 +47,4 @@ export class ProdutosComponent implements OnInit {
       this.listaProduto = resp
     })
   }
-
-
-
-
-
-
-   
 }

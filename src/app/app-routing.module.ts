@@ -15,11 +15,13 @@ import { ProdutosUsuarioComponent } from './produtos-usuario/produtos-usuario.co
 
 const routes: Routes = [
 
-    { path: 'nova-categoria', component: NovaCategoriaComponent},
-    { path: 'categorias', component: CategoriasComponent},
-    { path: 'produtos', component: ProdutosComponent},
-    { path: 'novo-produto', component: NovoProdutoComponent},
-    { path: 'perfil', component: PerfilComponent},
+    {path: '', redirectTo: 'EntrarCadastrarComponent', pathMatch: 'full'},
+
+    {path: 'nova-categoria', component: NovaCategoriaComponent},
+    {path: 'categorias', component: CategoriasComponent},
+    {path: 'produtos', component: ProdutosComponent},
+    {path: 'novo-produto', component: NovoProdutoComponent},
+    {path: 'perfil', component: PerfilComponent},
     {path: 'inicio', component: InicioComponent },
     {path: 'entrar-cadastrar', component: EntrarCadastrarComponent },
     {path: 'sobre', component: SobreComponent },
