@@ -1,0 +1,46 @@
+.<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class=" text-center text-secondary">Apagar Produto</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h4>Você tem certeza que deseja apagar esse produto?</h4>
+        </div>
+    </div>
+   <div class="container produtos mt-4">
+  
+  <table class="table table-hover">
+      <thead>
+          <tr>
+
+              <th>Imagem</th>
+              <th>Categoria</th>
+              <th>Nome</th>
+              <th>Preço</th>
+              <th>Descrição</th>
+              <th>Apagar</th>
+              <th>Voltar</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr >
+              
+              <td>{{produto.imagem}}</td>
+              <td>{{produto.categoria.nome}}</td>
+              <td>{{produto.nome}}</td>
+              <td>{{produto.preco}}</td>
+              <td>{{produto.descricao}}</td>
+              
+
+               <td> <button  href="" type="submit" class="btn editarIcone" (click)='apagar()' ><i class=" fa fa-trash"></i> </button></td> 
+              <td><button href="" type="submit" class="btn deletarIcone" routerLink='/produtos'><i class="fa fa-undo" aria-hidden="true"></i></button></td>
+              
+          </tr>
+      </tbody>
+  </table>
+</div>
+</div>
+
