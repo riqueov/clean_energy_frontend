@@ -1,98 +1,71 @@
-.videoSol{
+.videoSol [_ngcontent-wwi-c32] {
     width: 100vh;
-    z-index: -1;
-}
-
-.texto-video {
-    width: 100%;
-    text-align: center;
-    top: 250px;
-    display:block;
-    margin-left: -10px;
-    font-family: "Raleway",sans-serif;
-    font-size: 50px;
-    letter-spacing: .2rem;
-    z-index: 100;
+   
 }
 
 .carousel-indicators li {
-    width: 5px;
-    height: 5px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
 }
 
-#bannerCarousel {
-    height: 300px;
-}
-
-.card {
-   width: 12rem;
-   border: none;
-}
-
-.card:hover {
-   box-shadow: 0 0 15px #adb5bd;
-   cursor: pointer;
-}
-
-.descricaoProduto {
-    font-size: 14px;
-    font-weight: bold;
-}
-
-#valorAntigo {
-    text-decoration:line-through;
-    font-size: 12px;
-}
-
-#valorAtual {
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.btnComprar {
-    /* width: 100%;
-    font-weight: bold;
-    border: 2px solid transparent;
-    border-image: linear-gradient(45deg, #BB3E03, #FB8500);
-    border-image-slice: 1;
-    border-radius: 5px;
-    border: double 1px transparent;
-    background-image: linear-gradient(white, white),
-    linear-gradient(95deg, #BB3E03, #FB8500);
-    background-origin: border-box;
-    background-clip: content-box, border-box; */
-    width: 100%;
-    font-weight: bold;
-    border: 2px solid #BB3E03;
-    border-radius: 5px;
-    color: #BB3E03;
-    cursor: pointer;
-}
-
-.btnComprar:hover{
-    /* padding-left: 20px;
-    padding-right: 20px; */
-    color: #FFF;
-    /* background-color: #BB3E03; */
-    background: linear-gradient(45deg, #BB3E03, #FB8500);
-    box-shadow: 0 0 15px #adb5bd;
-    border: none;
-}
-     
-.maisProdutos a {
-    text-decoration: none;
+.titulo {
+    text-align: center;
     color: #023047;
-    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.imgSobre {
+    width: 380px;
+    height: 220px;
+    border-radius: 10px;
+    margin: 50px 0 50px 0;
+}
+
+.imgSobre:hover {
+    box-shadow: 0 0 1em #adb5bd;
+    -moz-transform: scale(1.2); 
+  -webkit-transform: scale(1.0);
+  transform: scale(1.2);
+}
+
+.tituloImagem {
+    font-size: 30px;
+    color: #FFB703;
+    font-weight: bold;
+    margin-top: 50px;
+    
+}
+.texto {
+    width: 460px;
+    height: 100%;
+    font-size: 20px;
+}
+
+.saibaMais {
+    color: #BB3E03;
+}
+
+.produtos {
+    width: 250px;
+    height: 300px;
+    border-radius: 10px
+}
+
+.btnVerMais {
+    background-color: #FFF;
+    margin-top: -200px;
+    margin-left: 320px;
+    width: 150px;
     font-weight: bold;
     text-transform: uppercase;
-    align-content: center;
-    justify-content: center;
+    padding: 10px;
 }
 
 .iconesEnergia {
     margin-top: 52px;
-    background-color: #219EBC;
+    background-color: #023047;
     width: 100%;
 }
 
@@ -121,8 +94,63 @@
     padding: 20px;
 }
 
-.modal-title {
-    color:#023047;
-    font-weight: bold;
+.videoEnergiaSolar {
+    width: 100%;
 }
 
+.comoFuncionaImg {
+    height: auto;
+    max-width: 100%;
+}
+
+.imgProduto{
+    margin: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.imgProduto:hover {
+    opacity: 0.5;
+  filter: alpha(opacity=50);
+  zoom: 1;
+}
+
+/* .imgProdutoP{
+    margin-top: -150px;
+    margin-left: 40px;
+} */
+
+.efeito {
+    background-image: url(../../assets/imagens/ceu.jpeg);
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.btnOrcamento{
+    border-radius: 50px;
+    color: #FFF;
+    background-color: #023047;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px;
+    border: none;
+    margin-top: inherit;
+}
+
+.btnSOrcamento {
+    margin-top: 250px;
+    position: relative;
+    
+}
+
+.fa-whatsapp{
+    font-size: 24px;
+}
+
+.titulo a {
+    text-decoration: none;
+    color: #023047;
+}
