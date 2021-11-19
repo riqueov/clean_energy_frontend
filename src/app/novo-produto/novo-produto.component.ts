@@ -2,11 +2,13 @@ import { CoreEnvironment } from '@angular/compiler/src/compiler_facade_interface
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
+import { AlertComponent } from '../alert/alert.component';
 import { CategoriaModel } from '../model/CategoriaModel';
 import { CredenciaisDTO } from '../model/CredenciaisDTO';
 import { ProdutoModel } from '../model/ProdutoModel';
 import { UsuarioLoginDTO } from '../model/UsuarioLoginDTO';
 import { UsuarioModel } from '../model/UsuarioModel';
+import { AlertService } from '../service/alert.service';
 import { CategoriaService } from '../service/categoria.service';
 import { ProdutoService } from '../service/produto.service';
 
@@ -29,7 +31,8 @@ export class NovoProdutoComponent implements OnInit {
   constructor(
     private router: Router,
     private produtoService: ProdutoService,
-    private categoriaService: CategoriaService
+    private categoriaService: CategoriaService,
+    private alert: AlertService
   ) { }
 
   ngOnInit() {
@@ -64,7 +67,7 @@ export class NovoProdutoComponent implements OnInit {
 
     this.produtoService.postProduto(this.produto).subscribe((resp: ProdutoModel) => {
       this.produto = resp
-      alert('Produto cadastrado com sucesso!')
+      this.alert.showAlertSuccess('Produto cadastrado com sucesso!')
       // Limpa os campos
       this.produto = new ProdutoModel()
     })
