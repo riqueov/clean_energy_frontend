@@ -10,6 +10,7 @@ import { SobreComponent } from './sobre/sobre.component';
 import { EntrarCadastrarComponent } from './entrar-cadastrar/entrar-cadastrar.component';
 import { CategoriaEditComponent } from './edit/categoria-edit/categoria-edit.component';
 import { CategoriaDeletComponent } from './delet/categoria-delet/categoria-delet.component';
+import { ProdutosUsuarioComponent } from './produtos-usuario/produtos-usuario.component';
 
 
 const routes: Routes = [
@@ -24,6 +25,7 @@ const routes: Routes = [
     {path: 'sobre', component: SobreComponent },
     {path: 'categoria-edit/:id', component: CategoriaEditComponent},
     {path: 'categoria-delet/:id', component: CategoriaDeletComponent},
+    {path: 'produtos-usuario', component: ProdutosUsuarioComponent}
     
 
   

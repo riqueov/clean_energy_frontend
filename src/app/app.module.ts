@@ -16,6 +16,7 @@ import { NovoProdutoComponent } from './novo-produto/novo-produto.component';
 import { EntrarCadastrarComponent } from './entrar-cadastrar/entrar-cadastrar.component';
 import { CategoriaDeletComponent } from './delet/categoria-delet/categoria-delet.component';
 import { CategoriaEditComponent } from './edit/categoria-edit/categoria-edit.component';
+import { ProdutosUsuarioComponent } from './produtos-usuario/produtos-usuario.component';
 
 
 
@@ -33,6 +34,7 @@ import { CategoriaEditComponent } from './edit/categoria-edit/categoria-edit.com
     EntrarCadastrarComponent,
     CategoriaDeletComponent,
     CategoriaEditComponent,
+    ProdutosUsuarioComponent,
     
 
   ],
