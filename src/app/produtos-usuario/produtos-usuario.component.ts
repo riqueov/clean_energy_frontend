@@ -8,11 +8,11 @@ import { CategoriaService } from '../service/categoria.service';
 import { ProdutoService } from '../service/produto.service';
 
 @Component({
-  selector: 'app-produtos',
-  templateUrl: './produtos.component.html',
-  styleUrls: ['./produtos.component.css']
+  selector: 'app-produtos-usuario',
+  templateUrl: './produtos-usuario.component.html',
+  styleUrls: ['./produtos-usuario.component.css']
 })
-export class ProdutosComponent implements OnInit {
+export class ProdutosUsuarioComponent implements OnInit {
 
   produto: ProdutoModel = new ProdutoModel()
   listaCategoria: CategoriaModel[]
@@ -20,6 +20,7 @@ export class ProdutosComponent implements OnInit {
   usuario: UsuarioModel = new UsuarioModel()
   idUsuario = environment.idUsuario
   categoria: CategoriaModel = new CategoriaModel
+  nomeProduto: string
 
   constructor(
     private router: Router,
@@ -34,9 +35,9 @@ export class ProdutosComponent implements OnInit {
 
     this.getAllCategoria()
     this.getAllProdutos()
-   }
-  
-   getAllCategoria() {
+  }
+
+  getAllCategoria() {
     this.categoriaService.getAllCategoria().subscribe((resp: CategoriaModel[]) => {
       this.listaCategoria = resp
     })
@@ -53,5 +54,8 @@ export class ProdutosComponent implements OnInit {
 
 
 
-   
+
+
+
+
 }
