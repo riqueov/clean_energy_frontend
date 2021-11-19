@@ -114,3 +114,33 @@
           </div> 
   
         <!-- Fim do card de produto -->
+<div class="container produtos mt-4">
+  <h1 class="h2 text-secondary"> Produtos Cadastrados </h1>
+  <table class="table table-hover">
+      <thead>
+          <tr>
+
+              <th>Imagem</th>
+              <th>Categoria</th>
+              <th>Nome</th>
+              <th>Preço</th>
+              <th>Descrição</th>
+              <th>Atualizar</th>
+              <th>Deletar</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor='let produto of listaProduto'>
+              
+              <td>{{produto.imagem}}</td>
+              <td>{{produto.categoria.nome}}</td>
+              <td>{{produto.nome}}</td>
+              <td>{{produto.preco}}</td>
+              <td>{{produto.descricao}}</td>
+              
+              <td><a href="#" type="submit" class="btn editarIcone"><i class=" fa fa-pencil"></i></a></td>
+              <td><a href="" type="submit" class="btn deletarIcone"><i class=" fa fa-trash"></i></a></td>
+          </tr>
+      </tbody>
+  </table>
+</div>

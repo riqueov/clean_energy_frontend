@@ -2,6 +2,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment.prod';
+import { CategoriaModel } from '../model/CategoriaModel';
 import { ProdutoModel } from '../model/ProdutoModel';
 
 @Injectable({
@@ -19,7 +20,20 @@ export class ProdutoService {
     }
   }
 
-  getAllCategoria(): Observable<ProdutoModel[]> {
+  getAllCategoria(): Observable<CategoriaModel[]> {
+    return this.http.get<CategoriaModel[]> ('https://projetocleanenergy.herokuapp.com/produtos', this.token)
+  }
+  
+  getByNameCategoria(nome: string): Observable <CategoriaModel>{
+    return this.http.get<CategoriaModel>(`https://projetocleanenergy.herokuapp.com/categorias/nome/${nome}`, this.token)
+  }
+
+  getByNameProduto(nome: string): Observable <ProdutoModel>{
+    return this.http.get<ProdutoModel>(`https://projetocleanenergy.herokuapp.com/produtos/nome/${nome}`, this.token)
+  }
+  
+
+  getAllProduto(): Observable<ProdutoModel[]> {
     return this.http.get<ProdutoModel[]> ('https://projetocleanenergy.herokuapp.com/produtos', this.token)
   }
 
