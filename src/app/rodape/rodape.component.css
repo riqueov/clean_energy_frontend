@@ -21,6 +21,10 @@
     font-size: 36px;
 }
 
+.mobile-l{ /*mobile link, para as redes sociais*/
+    text-align: end;
+}
+
 .rodape a {
     text-decoration: none;
 }
