@@ -1,3 +1,25 @@
+.titulo {
+    text-align: center;
+    color: #023047;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+ 
+.filtro {
+    background-color: #FFB703;
+}
+
+.form-control {
+    border-radius: 50px;
+    width: 400px;
+    border:none
+
+}
+
+.fa-search {
+    margin-left: -40px;
+    color: #023047;
+}
  .card {
     width: 12rem;
     border: none;
@@ -47,7 +69,7 @@
      box-shadow: 0 0 15px #adb5bd;
  }
       
- .imagem{
+ .imgProduto{
      height: 50%;
      width: 100%;
      object-fit: contain;
