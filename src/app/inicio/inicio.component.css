@@ -27,6 +27,7 @@
     -moz-transform: scale(1.2); 
    -webkit-transform: scale(1.0);
    transform: scale(1.2);
+   transition: .5s ease-in;
 }
 
 .tituloImagem {
@@ -147,7 +148,7 @@
     font-weight: bold;
     font-size: 14px;
     cursor: pointer; 
-    margin-left: 13px;
+    margin-left: -10px;
 }
 
 .produto3 figcaption {
@@ -198,7 +199,6 @@
 .imgProduto {
     background-image: url('../../assets/imagens/p1.jpg');
     background-position: center ;
-    background-size: cover;
     width: 300px;
     height: 200px;
     place-items: center;
@@ -212,7 +212,6 @@
   .imgProduto2 {
     background-image: url('../../assets/imagens/p2.jpg');
     background-position: center ;
-    background-size: cover;
     width: 300px;
     height: 200px;
     place-items: center;
@@ -221,12 +220,12 @@
     transition: .5s ease;
     backface-visibility: hidden;
     border-radius: 10px;
+    margin-left: -25px;
   }
 
   .imgProduto3 {
     background-image: url('../../assets/imagens/p3.jpg');
     background-position: center ;
-    background-size: cover;
     width: 300px;
     height: 200px;
     place-items: center;
@@ -259,15 +258,7 @@
     grid-column-end: span 4;
     grid-row-end: span 4; 
   }
-  .medium{
-    grid-column-end: span 3;
-    grid-row-end: span 3; 
-  }
-  .small{
-    grid-column-end: span 2;
-    grid-row-end: span 2; 
-  }
-
+ 
   /* Botão ver todos produtos */
 
   .titulo a {
