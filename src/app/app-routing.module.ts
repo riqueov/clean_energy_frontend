@@ -11,11 +11,13 @@ import { EntrarCadastrarComponent } from './entrar-cadastrar/entrar-cadastrar.co
 import { CategoriaEditComponent } from './edit/categoria-edit/categoria-edit.component';
 import { CategoriaDeletComponent } from './delet/categoria-delet/categoria-delet.component';
 import { ProdutosUsuarioComponent } from './produtos-usuario/produtos-usuario.component';
+import { ProdutoEditComponent } from './edit/produto-edit/produto-edit.component';
+import { ProdutoDeletComponent } from './delet/produto-delet/produto-delet.component';
 
 
 const routes: Routes = [
 
-    {path: '', redirectTo: 'EntrarCadastrarComponent', pathMatch: 'full'},
+    {path: '', redirectTo: 'inicio', pathMatch: 'full'},
 
     {path: 'nova-categoria', component: NovaCategoriaComponent},
     {path: 'categorias', component: CategoriasComponent},
@@ -27,7 +29,9 @@ const routes: Routes = [
     {path: 'sobre', component: SobreComponent },
     {path: 'categoria-edit/:id', component: CategoriaEditComponent},
     {path: 'categoria-delet/:id', component: CategoriaDeletComponent},
-    {path: 'produtos-usuario', component: ProdutosUsuarioComponent}
+    {path: 'produtos-usuario', component: ProdutosUsuarioComponent},
+    {path: 'produto-edit/:id', component: ProdutoEditComponent},
+    {path: 'produto-delet/:id', component: ProdutoDeletComponent}
     
 
   

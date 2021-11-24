@@ -19,7 +19,12 @@ import { EntrarCadastrarComponent } from './entrar-cadastrar/entrar-cadastrar.co
 import { CategoriaDeletComponent } from './delet/categoria-delet/categoria-delet.component';
 import { CategoriaEditComponent } from './edit/categoria-edit/categoria-edit.component';
 import { ProdutosUsuarioComponent } from './produtos-usuario/produtos-usuario.component';
+
+import { ProdutoEditComponent } from './edit/produto-edit/produto-edit.component';
+import { ProdutoDeletComponent } from './delet/produto-delet/produto-delet.component';
+
 import { AlertComponent } from './alert/alert.component';
+
 
 
 
@@ -38,7 +43,12 @@ import { AlertComponent } from './alert/alert.component';
     CategoriaDeletComponent,
     CategoriaEditComponent,
     ProdutosUsuarioComponent,
+
+    ProdutoEditComponent,
+    ProdutoDeletComponent,
+
     AlertComponent,
+
     
 
   ],

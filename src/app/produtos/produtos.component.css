@@ -52,3 +52,11 @@
      width: 100%;
      object-fit: contain;
  }
+
+ .editarIcone{
+    color: green;
+}
+
+.deletarIcone {
+    color: red;
+}

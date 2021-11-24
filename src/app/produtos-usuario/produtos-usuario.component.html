@@ -1,55 +1,60 @@
-<!--Submenu-->
+<div class="filtro d-flex align-items-center justify-content-center mb-5">
+  <nav class="navbar navbar-light text-left">
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+      <i class="fa fa-search" type="submit" aria-hidden="true"></i>
+    </form>
+  </nav>
 
- <!-- <ul class="nav nav-tabs">
-    <li class="nav-item">
-      <a class="nav-link text-dark active" href="#">Paineis Solares</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link text dark" href="#">Aquecedores de Água</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link text-dark" href="#">Aquecedores de Piscina</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link text-dark" href="#">Disabled</a>
-    </li>
-  </ul>  -->
+  <div class="categorias d-flex mt-3">
+    <div class="form-group form-check mr-3">
+      <input type="checkbox" class="form-check-input" id="ps">
+      <label class="form-check-label" for="ps">Painéis solares</label>
+    </div>
 
+    <div class="form-group form-check mr-3">
+      <input type="checkbox" class="form-check-input" id="ps">
+      <label class="form-check-label" for="ps">Aquecedores de água solar</label>
+    </div>
 
+    <div class="form-group form-check mr-3">
+      <input type="checkbox" class="form-check-input" id="ps">
+      <label class="form-check-label" for="ps">Aquecedores de Piscina</label>
+    </div>
 
-  <!--Produtos-->
+  </div>
+</div>
 
-  <div class="container-fluid pb-4 pt-4 pr-0 pl-0">  
-      
-    <div class="row justify-content-around w-100 bg-cinza1 p-2 m-0">
+<div class="produtos">
+  <h3 class="titulo">Produtos</h3>
+</div>
+<!-- Card de Produtos-->
 
-      <div *ngFor='let produto of listaProduto' class="card col-md-3 pl-2 pr-2 ml-2 mr-2 pt-3 pb-0 mb-3 height-card" data-toggle="modal" data-target="#detalhesProduto">
+<div class="container-fluid pb-4 pt-4 pr-0 pl-0">
 
-        <img class='imagem' src="https://i.imgur.com/OdZm3qc.jpg" alt="Painel Solar">
-        
-        <div class="card-body pb-0">
-          <h5 class="text-center p-0 pt-1">{{produto.nome}}</h5>
-          <hr class="p-0">
-          <p class="m-0" id="descricaoProduto">{{produto.descricao}}</p>
-          <p class="m-0" id="descricaoProduto">A partir de: </p>
-          <p class="card-text text-danger mt-3" id="valorAtual">R$ {{produto.preco}}</p>
-          
-          <button class="btnComprar"><i class="fa fa-whatsapp fa-lg pr-3" aria-hidden="true">
+  <div class="row justify-content-around w-100 bg-cinza1 p-2 m-0">
+
+    <div *ngFor='let produto of listaProduto' class="card col-md-3 pl-2 pr-2 ml-2 mr-2 pt-3 pb-0 mb-0 height-card"
+      data-toggle="modal" data-target="#detalhesProduto">
+
+      <img class='imgProduto' src="https://i.imgur.com/OdZm3qc.jpg" alt="Painel Solar">
+
+      <div class="card-body pb-0">
+        <h5 class="text-center p-0 pt-1">{{produto.nome}}</h5>
+        <hr class="p-0">
+        <p class="m-0" id="descricaoProduto">{{produto.descricao}}</p>
+        <p class="m-0" id="descricaoProduto">A partir de: </p>
+        <p class="card-text text-danger mt-3" id="valorAtual">R$ {{produto.preco}}</p>
+
+        <button class="btnComprar"><i class="fa fa-whatsapp fa-lg pr-3" aria-hidden="true">
           </i>Solicite um orçamento</button>
 
-        </div>
-      
       </div>
 
-
-      
-
-      
-      
-
-
     </div>
-    
-    </div> 
+  </div>
 
-  <!-- Fim do card de produto -->
+</div>
+
+<!-- Fim do card de produto -->
+

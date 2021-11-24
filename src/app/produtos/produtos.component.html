@@ -22,8 +22,8 @@
               <td>{{produto.preco}}</td>
               <td>{{produto.descricao}}</td>
               
-              <td><a href="#" type="submit" class="btn editarIcone"><i class=" fa fa-pencil"></i></a></td>
-              <td><a href="" type="submit" class="btn deletarIcone"><i class=" fa fa-trash"></i></a></td>
+              <td><a [routerLink]= "['/produto-edit', produto.idProduto ]" href="#" type="submit" class="btn editarIcone"><i class=" fa fa-pencil"></i></a></td>
+              <td><a [routerLink]= "['/produto-delet', produto.idProduto ]" href="" type="submit" class="btn deletarIcone"><i class=" fa fa-trash"></i></a></td>
           </tr>
       </tbody>
   </table>
