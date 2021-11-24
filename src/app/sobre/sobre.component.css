@@ -1,34 +1,63 @@
-.bg-azul1{
-    background: #023047;
+.titulo {
+    text-align: center;
+    color: #023047;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
-.bg-cinza1{
-    background: #E4EEF2;
+.texto {
+    font-size: 20px;
 }
 
-.bg-cinza2{
-    background: #c4cdd1;
+.jr{
+    color: #023047;
 }
 
-::-webkit-scrollbar {
-    background-color: #023047;    
-    width: 10px;
+.tituloEqp {
+    text-transform: uppercase;
+    font-size: 26px;
+    color: #FFB703;
+    font-weight: bold;
+    margin-top: 50px;
 }
 
-::-webkit-scrollbar-thumb {
-    background: #023047;
-    border-radius: 3px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #023047;
+.nomes {
+    font-size: 20px;
+    color: #023047;
+    font-weight: bold;  
 }
 
 .pneg{
     padding-bottom: -10px;
 }
 
+.imgh{
+    color: #023047;
+}
+
 .imgh:hover{
-    border-radius: 50%;
-    box-shadow: 0 0 20px #adb5bd;
+    color: #FFB703;
+}
+
+@media only screen and (max-width: 480px){
+    .mobile-c{ /*mobile content, mais geral*/
+    width: 100%;
+}
+
+.mobile-t{ /*mobile text, para texto e titulo*/
+    padding-left: 8%;
+}
+
+.mobile-i{ /*mobile image, para o nosso logo*/
+    width: 100%;
+    height: 100%;
+    padding-right: 30%;
+}
+
+.mobile-l{ /*mobile link, para aumentar o espaço dos links de github e linkedin*/
+    margin-bottom: 15%;
+}
+
+
+
 }
