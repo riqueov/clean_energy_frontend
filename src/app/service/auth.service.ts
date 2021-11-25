@@ -31,6 +31,15 @@ export class AuthService {
     return ok
   }
 
+  deslogado(){
+    let ok : boolean = false
+
+    if(environment.token == ''){
+      ok= true
+    }
+    return ok
+  }
+
   adm(){
     let ok: boolean = false;
     if (environment.tipo == 'adm'){
@@ -38,4 +47,19 @@ export class AuthService {
     }
     return ok;
   }
+
+sair(){
+  environment.token = ''
+  environment.nome = ''
+  environment.email = ''
+  environment.senha = ''
+  environment.idUsuario = 0
+  environment.tipo = ''
+
+}
+
+
+
+
+
 }
