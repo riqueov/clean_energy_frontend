@@ -21,6 +21,9 @@ export class ProdutosComponent implements OnInit {
   idUsuario = environment.idUsuario
   categoria: CategoriaModel = new CategoriaModel
 
+  key = 'data'
+  reverse = true
+
   constructor(
     private router: Router,
     private produtoService: ProdutoService,

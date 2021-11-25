@@ -12,6 +12,10 @@ export class CategoriasComponent implements OnInit {
 
   categoria: CategoriaModel = new CategoriaModel()
   listaCategorias: CategoriaModel[]
+
+  key = 'data'
+  reverse = true
+  
   constructor(
     private router: Router,
     private categoriaService: CategoriaService

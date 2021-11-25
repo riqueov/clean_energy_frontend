@@ -10,7 +10,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr *ngFor='let categoria of listaCategorias'>
+            <tr *ngFor='let categoria of listaCategorias | orderBy : key : reverse'>
               
               <th scope="row">{{categoria.nome}}</th>
               <td><button class=" btn editarIcone" [routerLink]= "['/categoria-edit', categoria.idCategoria ]" ><i class=" fa fa-pencil"></i></button></td>
