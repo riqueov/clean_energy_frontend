@@ -1,6 +1,7 @@
 .perfil {
     left: 150px; 
     position: relative; 
+    height: 100vh;
 }
 
 #imgPerfil {

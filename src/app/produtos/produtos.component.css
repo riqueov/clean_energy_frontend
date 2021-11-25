@@ -1,3 +1,7 @@
+.produtos {
+    height: 100vh;
+}
+
 .card {
     width: 12rem;
     border: none;

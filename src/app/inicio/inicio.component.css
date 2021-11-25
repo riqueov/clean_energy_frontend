@@ -198,7 +198,8 @@
 
 .imgProduto {
     background-image: url('../../assets/imagens/p1.jpg');
-    background-position: center ;
+    background-position: center;
+    background-size: cover;
     width: 300px;
     height: 200px;
     place-items: center;
@@ -211,7 +212,8 @@
 
   .imgProduto2 {
     background-image: url('../../assets/imagens/p2.jpg');
-    background-position: center ;
+    background-position: center;
+    background-size: cover;
     width: 300px;
     height: 200px;
     place-items: center;
@@ -225,7 +227,8 @@
 
   .imgProduto3 {
     background-image: url('../../assets/imagens/p3.jpg');
-    background-position: center ;
+    background-position: center;
+    background-size: cover;
     width: 300px;
     height: 200px;
     place-items: center;
@@ -264,5 +267,9 @@
   .titulo a {
     text-decoration: none;
     color: #023047;
+}
+
+.geral {
+    position: relative;
 }
   
