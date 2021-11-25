@@ -49,4 +49,15 @@ export class ProdutosUsuarioComponent implements OnInit {
     })
   }
 
+  findByNomeProduto() {
+
+    if (this.nomeProduto == '') {
+      this.getAllProdutos()
+    } else {
+      this.produtoService.getByNomeProduto(this.nomeProduto).subscribe((resp: ProdutoModel[]) => {
+        this.listaProduto = resp
+      })
+    }
+  }
+
 }

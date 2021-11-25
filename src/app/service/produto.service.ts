@@ -1,6 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, ObservedValueOf } from 'rxjs';
 import { environment } from 'src/environments/environment.prod';
 import { CategoriaModel } from '../model/CategoriaModel';
 import { ProdutoModel } from '../model/ProdutoModel';
@@ -32,6 +32,11 @@ export class ProdutoService {
   getByIdProdutos(id: number): Observable<ProdutoModel>{
     return this.http.get<ProdutoModel>(`https://projetocleanenergy.herokuapp.com/produtos/id/${id}`, this.token)
   }
+
+  getByNomeProduto(nome: string): Observable<ProdutoModel[]> {
+    return this.http.get<ProdutoModel[]>(`https://projetocleanenergy.herokuapp.com/produtos/nome/${nome}`, this.token)
+  }
+
   postProduto(produto: ProdutoModel): Observable<ProdutoModel> {
     return this.http.post<ProdutoModel>('https://projetocleanenergy.herokuapp.com/produtos',produto, this.token)
   }
