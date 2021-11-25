@@ -61,9 +61,14 @@
       </li>
 
     </form>
+
+    <a class="navbar-brand remove" href="#"><i class="fa fa-user-circle fa-lg" aria-hidden="true"></i></a>
+    <a *ngIf="auth.deslogado()" class="nav-link text-dark" routerLink='/entrar-cadastrar' href="#">Faça o login ou Cadastre-se</a>
+    <a *ngIf="auth.logado()" class="nav-link text-dark" routerLink='/entrar-cadastrar' href="#" (click)='sair()'>Olá {{usuario.nomeCompleto}}, clique aqui para sair. </a>
+
+
     
-    <img class="iconeUsuario"src="../../assets/imagens/iconeUsuario.png">
-    <p class="login" routerLink='/entrar-cadastrar'>Faça login ou <span> <a class="cadastrar" routerLink="/entrar-cadastrar">Cadastre-se</a></span></p>
+   
 
   </div>
 </nav>

@@ -47,9 +47,10 @@
         <p class="m-0" id="descricaoProduto">A partir de: </p>
         <p class="card-text text-danger mt-3" id="valorAtual">R$ {{produto.preco}}</p>
 
-        <button class="btnComprar"><i class="fa fa-whatsapp fa-lg pr-3" aria-hidden="true">
-          </i>Solicite um orçamento</button>
-
+        <a *ngIf="auth.logado()" href="https://api.whatsapp.com/send?phone=5511989384483&text=Gostaria%20de%20ser%20atendido" target="_blank" class="btn btnComprar">
+        <i class="fa fa-whatsapp fa-lg pr-3" aria-hidden="true"></i>Solicite um orçamento
+        </a>
+        <a *ngIf="auth.deslogado()" routerLink='/entrar-cadastrar' class="btn btnComprar" (click)='logar()'> <i class="fa fa-whatsapp fa-lg pr-3" aria-hidden="true"></i>Solicite um orçamento</a>
       </div>
 
     </div>

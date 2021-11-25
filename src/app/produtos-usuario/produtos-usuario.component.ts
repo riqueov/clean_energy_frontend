@@ -4,6 +4,7 @@ import { environment } from 'src/environments/environment.prod';
 import { CategoriaModel } from '../model/CategoriaModel';
 import { ProdutoModel } from '../model/ProdutoModel';
 import { UsuarioModel } from '../model/UsuarioModel';
+import { AuthService } from '../service/auth.service';
 import { CategoriaService } from '../service/categoria.service';
 import { ProdutoService } from '../service/produto.service';
 
@@ -21,11 +22,13 @@ export class ProdutosUsuarioComponent implements OnInit {
   idUsuario = environment.idUsuario
   categoria: CategoriaModel = new CategoriaModel
   nomeProduto: string
+  
 
   constructor(
     private router: Router,
     private produtoService: ProdutoService,
-    private categoriaService: CategoriaService
+    private categoriaService: CategoriaService,
+    public auth: AuthService
   ) { }
 
   ngOnInit() {
@@ -49,4 +52,10 @@ export class ProdutosUsuarioComponent implements OnInit {
     })
   }
 
+  logar(){
+  alert('Por favor, entre para poder solicitar um orçamento.')
+  }
+
+
 }
+
