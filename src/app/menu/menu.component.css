@@ -1,3 +1,37 @@
+.navbar a {
+    color: #023047;
+    font-size: 18px;
+   
+}
+
+.iconeUsuario {
+    width:35px;
+    padding-right: 15px;
+    margin-bottom: 18px;
+  
+}
+.login{
+    font-size: 12px;
+}
+
+.login a{
+    font-size: 12px;
+}
+
+.navbar-nav a:hover {
+    color: #FFB703;
+}
+
+.cadastrar {
+    font-weight: bold;
+    text-decoration: none;
+    color: #023047;
+}
+
+.cadastrar:hover {
+    color: #FFB703;
+}
+
 @media only screen and (max-width: 480px){
 
     .mobile-c{ /*mobile content, para alinhar os conteúdos*/
