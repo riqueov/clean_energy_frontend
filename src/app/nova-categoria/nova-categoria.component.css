@@ -1,6 +1,7 @@
 .novaCategoria {
     left: 150px; 
     position: relative; 
+    height: 100vh;
 }
 
 .botoes {
