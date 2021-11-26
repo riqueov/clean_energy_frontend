@@ -44,4 +44,6 @@ export class ProdutoService {
     return this.http.delete(`https://projetocleanenergy.herokuapp.com/produtos/${id}`, this.token)
   }
 
+
+
 }
