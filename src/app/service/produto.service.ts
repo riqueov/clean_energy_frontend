@@ -21,20 +21,20 @@ export class ProdutoService {
   }
 
   getAllCategoria(): Observable<CategoriaModel[]> {
-    return this.http.get<CategoriaModel[]> ('https://projetocleanenergy.herokuapp.com/produtos', this.token)
+    return this.http.get<CategoriaModel[]> ('https://projetocleanenergy.herokuapp.com/produtos')
   }
   
   
   getAllProduto(): Observable<ProdutoModel[]> {
-    return this.http.get<ProdutoModel[]> ('https://projetocleanenergy.herokuapp.com/produtos', this.token)
+    return this.http.get<ProdutoModel[]> ('https://projetocleanenergy.herokuapp.com/produtos')
   }
 
   getByIdProdutos(id: number): Observable<ProdutoModel>{
-    return this.http.get<ProdutoModel>(`https://projetocleanenergy.herokuapp.com/produtos/id/${id}`, this.token)
+    return this.http.get<ProdutoModel>(`https://projetocleanenergy.herokuapp.com/produtos/id/${id}`)
   }
 
   getByNomeProduto(nome: string): Observable<ProdutoModel[]> {
-    return this.http.get<ProdutoModel[]>(`https://projetocleanenergy.herokuapp.com/produtos/nome/${nome}`, this.token)
+    return this.http.get<ProdutoModel[]>(`https://projetocleanenergy.herokuapp.com/produtos/nome/${nome}`)
   }
 
   postProduto(produto: ProdutoModel): Observable<ProdutoModel> {
