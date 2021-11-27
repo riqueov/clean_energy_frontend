@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment.prod';
 import { CategoriaModel } from '../model/CategoriaModel';
 import { ProdutoModel } from '../model/ProdutoModel';
@@ -20,6 +21,9 @@ export class ProdutosComponent implements OnInit {
   usuario: UsuarioModel = new UsuarioModel()
   idUsuario = environment.idUsuario
   categoria: CategoriaModel = new CategoriaModel
+
+  key = 'data'
+  reverse = true
 
   constructor(
     private router: Router,

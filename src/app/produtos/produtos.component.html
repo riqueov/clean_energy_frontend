@@ -14,7 +14,7 @@
           </tr>
       </thead>
       <tbody>
-          <tr *ngFor='let produto of listaProduto'>
+          <tr *ngFor='let produto of listaProduto | orderBy : key : reverse'>
               
               <td>{{produto.imagem}}</td>
               <td>{{produto.categoria.nome}}</td>
