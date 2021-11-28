@@ -24,6 +24,7 @@ import { ProdutoEditComponent } from './edit/produto-edit/produto-edit.component
 import { ProdutoDeletComponent } from './delet/produto-delet/produto-delet.component';
 
 import { AlertComponent } from './alert/alert.component';
+import { OrderModule } from 'ngx-order-pipe';
 
 
 
@@ -57,7 +58,8 @@ import { AlertComponent } from './alert/alert.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ModalModule.forRoot()
+    ModalModule.forRoot(),
+    OrderModule
   ],
   providers: [{
     provide: LocationStrategy,

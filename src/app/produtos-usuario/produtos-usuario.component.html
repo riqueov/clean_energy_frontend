@@ -1,7 +1,9 @@
+<!-- Inicio da nav de busca -->
+
 <div class="filtro d-flex align-items-center justify-content-center mb-5">
   <nav class="navbar navbar-light text-left">
     <form class="form-inline">
-      <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+      <input [(ngModel)]='nomeProduto' (keyup)='findByNomeProduto()' name='search' id='search' class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
       <i class="fa fa-search" type="submit" aria-hidden="true"></i>
     </form>
   </nav>
@@ -13,7 +15,7 @@
     </div>
 
     <div class="form-group form-check mr-3">
-      <input type="checkbox" class="form-check-input" id="ps">
+      <input type="checkbox" class="form-check-input" id="ps" name='aquecedor' [(ngModel)]='categoriaProd' (change)='getCategoriaProd()'>
       <label class="form-check-label" for="ps">Aquecedores de água solar</label>
     </div>
 
@@ -24,6 +26,8 @@
 
   </div>
 </div>
+
+<!-- Fim da nav de busca -->
 
 <div class="produtos">
   <h3 class="titulo">Produtos</h3>

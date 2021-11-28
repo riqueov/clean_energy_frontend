@@ -21,8 +21,10 @@ export class ProdutosUsuarioComponent implements OnInit {
   usuario: UsuarioModel = new UsuarioModel()
   idUsuario = environment.idUsuario
   categoria: CategoriaModel = new CategoriaModel
+  nomeProduto: string = ''
+  categoriaProd: any
   nomeProduto: string
-  
+ 
 
   constructor(
     private router: Router,
@@ -52,6 +54,28 @@ export class ProdutosUsuarioComponent implements OnInit {
     })
   }
 
+  findByNomeProduto() {
+
+    if (this.nomeProduto == '') {
+      this.getAllProdutos()
+    } else {
+      // this.produtoService.getByNomeProduto(this.nomeProduto).subscribe((resp: ProdutoModel[]) => {
+      //   this.listaProduto = resp
+      //   console.log(this.listaProduto)
+      // })
+      this.produtoService.getByNomeProduto(this.nomeProduto).subscribe((resp: ProdutoModel[])=>{
+        this.listaProduto = resp;
+        console.log(resp)
+        console.log(this.nomeProduto)
+      })
+    }
+  }
+
+  getCategoriaProd(){
+    console.log(this.categoriaProd)
+  }
+
+}
   logar(){
   alert('Por favor, entre para poder solicitar um orçamento.')
   }
@@ -60,4 +84,3 @@ export class ProdutosUsuarioComponent implements OnInit {
 
 
 }
-

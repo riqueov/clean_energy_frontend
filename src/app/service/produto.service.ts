@@ -1,6 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, ObservedValueOf } from 'rxjs';
 import { environment } from 'src/environments/environment.prod';
 import { CategoriaModel } from '../model/CategoriaModel';
 import { ProdutoModel } from '../model/ProdutoModel';
@@ -21,17 +21,22 @@ export class ProdutoService {
   }
 
   getAllCategoria(): Observable<CategoriaModel[]> {
-    return this.http.get<CategoriaModel[]> ('https://projetocleanenergy.herokuapp.com/produtos', this.token)
+    return this.http.get<CategoriaModel[]> ('https://projetocleanenergy.herokuapp.com/produtos')
   }
   
   
   getAllProduto(): Observable<ProdutoModel[]> {
-    return this.http.get<ProdutoModel[]> ('https://projetocleanenergy.herokuapp.com/produtos', this.token)
+    return this.http.get<ProdutoModel[]> ('https://projetocleanenergy.herokuapp.com/produtos')
   }
 
   getByIdProdutos(id: number): Observable<ProdutoModel>{
-    return this.http.get<ProdutoModel>(`https://projetocleanenergy.herokuapp.com/produtos/id/${id}`, this.token)
+    return this.http.get<ProdutoModel>(`https://projetocleanenergy.herokuapp.com/produtos/id/${id}`)
   }
+
+  getByNomeProduto(nome: string): Observable<ProdutoModel[]> {
+    return this.http.get<ProdutoModel[]>(`https://projetocleanenergy.herokuapp.com/produtos/nome/${nome}`)
+  }
+
   postProduto(produto: ProdutoModel): Observable<ProdutoModel> {
     return this.http.post<ProdutoModel>('https://projetocleanenergy.herokuapp.com/produtos',produto, this.token)
   }
