@@ -8,22 +8,8 @@
     </form>
   </nav>
 
-  <div class="categorias d-flex mt-3">
-    <div class="form-group form-check mr-3">
-      <input type="checkbox" class="form-check-input" id="ps">
-      <label class="form-check-label" for="ps">Painéis solares</label>
-    </div>
-
-    <div class="form-group form-check mr-3">
-      <input type="checkbox" class="form-check-input" id="ps" name='aquecedor' [(ngModel)]='categoriaProd' (change)='getCategoriaProd()'>
-      <label class="form-check-label" for="ps">Aquecedores de água solar</label>
-    </div>
-
-    <div class="form-group form-check mr-3">
-      <input type="checkbox" class="form-check-input" id="ps">
-      <label class="form-check-label" for="ps">Aquecedores de Piscina</label>
-    </div>
-
+  <div class="categorias d-flex mt-3 ">
+      <a *ngFor='let categoria of listaCategoria' [routerLink]= "['/detalhecategoria', categoria.idCategoria ]" href="#" type="submit">{{categoria.nome}}</a>
   </div>
 </div>
 

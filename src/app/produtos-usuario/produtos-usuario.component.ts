@@ -23,7 +23,6 @@ export class ProdutosUsuarioComponent implements OnInit {
   categoria: CategoriaModel = new CategoriaModel
   nomeProduto: string = ''
   categoriaProd: any
-
  
 
   constructor(
