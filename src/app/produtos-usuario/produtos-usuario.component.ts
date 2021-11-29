@@ -23,7 +23,6 @@ export class ProdutosUsuarioComponent implements OnInit {
   categoria: CategoriaModel = new CategoriaModel
   nomeProduto: string = ''
   categoriaProd: any
-  nomeProduto: string
  
 
   constructor(
@@ -75,7 +74,7 @@ export class ProdutosUsuarioComponent implements OnInit {
     console.log(this.categoriaProd)
   }
 
-}
+
   logar(){
   alert('Por favor, entre para poder solicitar um orçamento.')
   }
