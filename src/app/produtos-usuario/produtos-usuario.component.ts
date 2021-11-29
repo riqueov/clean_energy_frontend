@@ -78,6 +78,7 @@ export class ProdutosUsuarioComponent implements OnInit {
   logar(){
   alert('Por favor, entre para poder solicitar um orçamento.')
   }
+  
 
 
 }

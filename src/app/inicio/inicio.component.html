@@ -27,7 +27,6 @@
         <span class="sr-only">Próximo</span>
     </a>
 
-
 </div>
 
 <!-- Fim Banners carousel -->
@@ -122,7 +121,7 @@
 
     <!-- Fim do modal que aparece o vídeo -->
 
-    <!-- Icones de beneficios-->
+    <!-- Icones de benefcios-->
     <div class="container-fluid mt-5 m-0 p-0">
         <div class="iconesEnergia m-0 p-0">
             <div class="container d-flex align-items-center">
@@ -154,18 +153,18 @@
 
             <div class="container d-flex justify-content-around produtos mt-5">
 
-                <div class=" col-md-4 produto">
-                    <div class="imgProduto" href="#"></div>
-                    <figcaption>Paineis Solares</figcaption>
+                <div class=" col-md-4 produto" (click)="getProdutosUsuario()">
+                    <div class="imgProduto"></div>
+                    <figcaption >Paineis Solares</figcaption>
                 </div>
 
                 <div class="col-md-4 produto2">
-                    <div class="imgProduto2" href="#"></div>
+                    <div class="imgProduto2" (click)="getProdutosUsuario()"></div>
                     <figcaption>Aquecedores de água Solar</figcaption>
                 </div>
 
                 <div class="col-md-4 produto3">
-                    <div class="imgProduto3" href="#"></div>
+                    <div class="imgProduto3" (click)="getProdutosUsuario()"></div>
                     <figcaption>Aquecedores de piscina</figcaption>
                 </div>
 
@@ -175,7 +174,7 @@
 
     <!-- Fim do Conheça nossos produtos -->
     <div class="container-col-md-6 titulo mt-3">
-        <a routerLink="/produtos-usuario">
-            <p> Ver todos</p>
+        <a (click)="getProdutosUsuario()">
+            <p> Ver todos </p>
         </a>
     </div>
