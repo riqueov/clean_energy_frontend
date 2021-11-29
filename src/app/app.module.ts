@@ -25,6 +25,7 @@ import { ProdutoDeletComponent } from './delet/produto-delet/produto-delet.compo
 
 import { AlertComponent } from './alert/alert.component';
 import { OrderModule } from 'ngx-order-pipe';
+import { DetalheCategoriaComponent } from './detalhe-categoria/detalhe-categoria.component';
 
 
 
@@ -49,6 +50,7 @@ import { OrderModule } from 'ngx-order-pipe';
     ProdutoDeletComponent,
 
     AlertComponent,
+      DetalheCategoriaComponent,
 
     
 
