@@ -27,13 +27,13 @@ export class DetalheCategoriaComponent implements OnInit {
     private route: ActivatedRoute
   ) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
     this.categoriaService.refreshToken()
     this.produtoService.refreshToken()
 
     this.idCat = this.route.snapshot.params['id']
-    this.getCategoriaById
 
+    this.getCategoriaById()
     this.getAllProdutos()
   }
 

@@ -3,8 +3,8 @@
 <h1>{{categoria.nome}}</h1>
 
 <div class="row">
-    <div class="col-md-4" ngFor='let produto of categoria.produtosCategoria'>
-        <img [src]="produto.imagem" alt="">
+    <div class="col-md-4" *ngFor='let produto of categoria.produtosCategoria'>
+        <img [src]="produto.imagem" alt="" width="200" height="200">
         <p>{{categoria.nome}}</p>
     </div>
 </div>
