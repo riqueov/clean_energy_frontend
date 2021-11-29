@@ -1,10 +1,33 @@
-<a routerLink="/produtos-usuario">Voltar</a>
-
-<h1>{{categoria.nome}}</h1>
-
-<div class="row">
-    <div class="col-md-4" *ngFor='let produto of categoria.produtosCategoria'>
-        <img [src]="produto.imagem" alt="" width="200" height="200">
-        <p>{{categoria.nome}}</p>
+<div class="filtro d-flex mb-5 d-flex justify-content-between">
+    <div class="categorias d-flex mt-3">
+        <a class="btn-select pb-1 ml-5 mb-2 rounded" routerLink="/produtos-usuario"><i class="fa fa-long-arrow-left" aria-hidden="true">   
+        </i> Voltar</a>
     </div>
+</div>
+
+<h3 class="titulo">{{categoria.nome}}</h3>
+
+<div class="container-fluid pb-4 pt-4 pr-0 pl-0">
+
+  <div class="row justify-content-center w-100 bg-cinza1 p-2 m-0">
+
+    <div class="card col-md-3 pb-0 mb-5 ml-2 mr-2 height-card" *ngFor='let produto of categoria.produtosCategoria'>
+        <img [src]="produto.imagem" class="imgProduto" alt="" width="200" height="200">
+
+        
+        <div class="card-body pb-0">
+            <h5 class="text-center p-0 pt-1">{{ produto.nome }}</h5>
+            <hr class="p-0">
+            <p class="m-0" id="descricaoProduto">{{produto.descricao}}</p>
+            <p class="m-0" id="descricaoProduto">A partir de: </p>
+            <p class="card-text text-danger mt-3" id="valorAtual">R$ {{produto.preco}}</p>
+
+            <a *ngIf="auth.logado()" href="https://api.whatsapp.com/send?phone=5511989384483&text=Gostaria%20de%20ser%20atendido" class="btn btnComprar" > <i class="fa fa-whatsapp fa-lg pr-3" aria-hidden="true"></i>Solicite um orçamento</a>
+            <a *ngIf="auth.deslogado()" routerLink='/entrar-cadastrar' class="btn btnComprar" (click)='logar()'> <i class="fa fa-whatsapp fa-lg pr-3" aria-hidden="true"></i>Solicite um orçamento</a>
+        </div>
+
+    </div>
+
+  </div>
+
 </div>

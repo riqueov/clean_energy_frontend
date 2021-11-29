@@ -1,16 +1,22 @@
 <!-- Inicio da nav de busca -->
 
-<div class="filtro d-flex align-items-center justify-content-center mb-5">
-  <nav class="navbar navbar-light text-left">
+<div class="filtro d-flex mb-5 d-flex justify-content-between">
+  <div class="categorias d-flex mt-3">
+    <ul class="nav nav-tabs">
+      <li class="nav-item dropdown filtro">
+        <a class="nav-link dropdown-toggle btn-select pb-2 ml-3 mb-3 rounded" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Selecione uma Categoria</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item pl-3 pr-3"*ngFor='let categoria of listaCategoria' [routerLink]= "['/detalhecategoria', categoria.idCategoria ]" href="#" type="submit">{{categoria.nome}}</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <nav class="d-flex justify-content-end navbar navbar-light text-left">
     <form class="form-inline">
       <input [(ngModel)]='nomeProduto' (keyup)='findByNomeProduto()' name='search' id='search' class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
       <i class="fa fa-search" type="submit" aria-hidden="true"></i>
     </form>
   </nav>
-
-  <div class="categorias d-flex mt-3 ">
-      <a *ngFor='let categoria of listaCategoria' [routerLink]= "['/detalhecategoria', categoria.idCategoria ]" href="#" type="submit">{{categoria.nome}}</a>
-  </div>
 </div>
 
 <!-- Fim da nav de busca -->

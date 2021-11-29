@@ -23,7 +23,7 @@ export class DetalheCategoriaComponent implements OnInit {
     private router: Router,
     private produtoService: ProdutoService,
     private categoriaService: CategoriaService,
-    private auth: AuthService,
+    public auth: AuthService,
     private route: ActivatedRoute
   ) { }
 
@@ -48,5 +48,9 @@ export class DetalheCategoriaComponent implements OnInit {
       this.categoria = resp
     })
   }
-
+  
+  logar(){
+    alert('Por favor, entre para poder solicitar um orçamento.')
+  }
+  
 }
